@@ -1,0 +1,132 @@
+body {
+    font-family: 'Cabin', sans-serif;
+    padding-bottom: 110px;
+}
+
+.page-footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    height: 8%;
+    z-index: 1;
+}
+
+.title {
+    margin: -4px 20px;
+}
+
+.appCont {
+    margin-top: 150px;
+}
+
+.inputCont {
+    margin-top: 60px;
+}
+
+.loginCont {
+    margin-top: 60px;
+}
+
+.spinner {
+    position: relative;
+    display: none;
+    float: right;
+    margin-right: 500px;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+}
+
+.spinnerShow {
+    position: relative;
+    display: unset;
+    float: right;
+    margin-right: 500px;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+}
+
+.spinner-sector {
+    border-radius: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 12px solid transparent;
+}
+
+.spinner-color-green {
+    animation: rotate .24s linear infinite;
+    border-top: 15px solid #ecff1f;
+}
+
+.spinner-color-grey {
+    border: 14px solid #546e7a;
+}
+
+.splashCont {
+    margin-top: 60px;
+}
+
+nav{
+    background-color: #ffe600;
+}
+
+.button{
+    background: rgb(226, 85, 30);
+background: linear-gradient(90deg, rgba(253,29,29,1) 21%, rgba(252,176,69,1) 100%);
+}
+
+nav ul a:hover {
+    background-color: rgba(0,0,0,0);
+}
+.page-footer{
+   height: 100px;
+}
+
+.footer-content{
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-content img{
+    width: 45px;
+    height: 40px;
+    border-radius: 25px;
+    margin: 0 30px ;
+}
+
+.login{
+    text-align: center;
+    
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg); }
+}
+
+@media only screen and (max-width: 768px) {
+    .topHeader {
+        width: 55%;
+    }
+    .spinnerShow {
+        display: none;
+    }
+    .spinner {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    .spinnerShow {
+        display: none;
+    }
+    .spinner {
+        display: none;
+    }
+}
